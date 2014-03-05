@@ -18,6 +18,8 @@
 
 @property (nonatomic, weak) id <MCVideoPlayerDelegate> delegate;
 
+@property (nonatomic, readonly) BOOL isPlaying;
+
 - (void)play;
 - (void)pause;
 - (void)addToView:(UIView *)view;

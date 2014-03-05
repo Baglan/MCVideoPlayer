@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860F154118C5F69200AF6D03 /* MCSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860F154018C5F69200AF6D03 /* MCSelectorView.m */; };
 		8626F57118BA2D8C00CABD41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8626F57018BA2D8C00CABD41 /* Foundation.framework */; };
 		8626F57318BA2D8C00CABD41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8626F57218BA2D8C00CABD41 /* CoreGraphics.framework */; };
 		8626F57518BA2D8C00CABD41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8626F57418BA2D8C00CABD41 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		860F153F18C5F69200AF6D03 /* MCSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSelectorView.h; path = MCSelectorView/Classes/MCSelectorView.h; sourceTree = "<group>"; };
+		860F154018C5F69200AF6D03 /* MCSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSelectorView.m; path = MCSelectorView/Classes/MCSelectorView.m; sourceTree = "<group>"; };
 		8626F56D18BA2D8C00CABD41 /* MCVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8626F57018BA2D8C00CABD41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8626F57218BA2D8C00CABD41 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,9 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860F153D18C5F67300AF6D03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				860F153E18C5F67800AF6D03 /* MCSelectorView */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		860F153E18C5F67800AF6D03 /* MCSelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				860F153F18C5F69200AF6D03 /* MCSelectorView.h */,
+				860F154018C5F69200AF6D03 /* MCSelectorView.m */,
+			);
+			name = MCSelectorView;
+			sourceTree = "<group>";
+		};
 		8626F56418BA2D8C00CABD41 = {
 			isa = PBXGroup;
 			children = (
+				860F153D18C5F67300AF6D03 /* Helpers */,
 				8626F5A518BA2D9300CABD41 /* Classes */,
 				8626F57618BA2D8C00CABD41 /* MCVideoPlayer */,
 				8626F59518BA2D8C00CABD41 /* MCVideoPlayerTests */,
@@ -271,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8626F58718BA2D8C00CABD41 /* ViewController.m in Sources */,
+				860F154118C5F69200AF6D03 /* MCSelectorView.m in Sources */,
 				8626F58118BA2D8C00CABD41 /* AppDelegate.m in Sources */,
 				8626F5A818BA2E1A00CABD41 /* MCVideoPlayer.m in Sources */,
 				8626F57D18BA2D8C00CABD41 /* main.m in Sources */,

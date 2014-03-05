@@ -1,0 +1,3 @@
+[submodule "MCSelectorView"]
+	path = MCSelectorView
+	url = git@github.com:Baglan/MCSelectorView
