@@ -20,6 +20,7 @@
     UIWindow * _fullScreenWindow;
     UIView * _superView;
     NSArray * _segments;
+    id _timeObserver;
 }
 
 - (id)init
@@ -133,7 +134,13 @@
         
         AVPlayer * player = _player;
         MCVideoPlayer * weakSelf = self;
-        [_player addBoundaryTimeObserverForTimes:times queue:dispatch_get_main_queue() usingBlock:^{
+        
+        // Remove current time observer
+        if (_timeObserver) {
+            [_player removeTimeObserver:_timeObserver];
+        }
+        
+        _timeObserver = [_player addBoundaryTimeObserverForTimes:times queue:dispatch_get_main_queue() usingBlock:^{
             float time = (float)player.currentTime.value / (float)player.currentTime.timescale;
             NSArray * reverseSegments = [segments reverseObjectEnumerator].allObjects;
             for (NSNumber * segment in reverseSegments) {
